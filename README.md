@@ -13,16 +13,16 @@ The three factors to consider when writing code are:
 - Quality of the code
 - Cost
 
-None of the above is a deterministing value:
+None of the above is a deterministic value:
 
-Programmers and managers are notorious for understimating the complexity of
+Programmers and managers are notorious for underestimating the complexity of
 writing code and missing deadlines.
 
 Quality of code is almost impossible to measure up front.
 
 Cost of writing code depends of the number of people working on it and the
-time it takes to write it, the easines of testing it and deployment
-coplexities.
+time it takes to write it, the easiness of testing it and deployment
+complexities.
 
 We should prioritize:
 
@@ -42,7 +42,7 @@ We should avoid:
  A common approach in software development is to try to  move fast and break
  things hopping to fix them later. This approach should be avoided as it
  quickly accumulates technical debt that is hard to fix and also in many cases
- it makes vendor lockin a very difficult to remove task for the future.
+ it makes vendor lock-in a very difficult to remove task for the future.
 
  Programmers must always be conservative when it comes to agreeing in tight
  deadlines since in the vast majority of cases they will not be met.
@@ -61,7 +61,7 @@ being easier to reason about.
 
 The importance of testing cannot be overstated. It is the single most important
 thing in software development and it is also the most easily forgotten and
-ommitted when programmers are trying to move fast.
+omitted when programmers are trying to move fast.
 
 Testing code must be viewed as a production level and should be treated as such.
 
@@ -84,6 +84,15 @@ Each module must have its corresponding test script following this pattern:
 ./test/test_mymodule.py
 ```
 
+Internally used front end code, or scripts that are not exposed to user directly
+do not necessarily need to be tested.
+
+Backend code should be tested with a very high degree of coverage reaching 100%
+if possible.
+
+Missing lines from testing must be identified and fixed if possible. Code that
+is difficult to test is a sign of a bad design that should be refactored.
+
 ## Documentation and Code Comments
 
 Functions, classes and modules should have docstrings (Google style is
@@ -105,26 +114,16 @@ or snake_case can be chosen.
 
 ## Security and performance (basics)
 
-Hardcoded secrets, API keys, or credentials do not belong to the source code and
+Hard-coded secrets, API keys, or credentials do not belong to the source code and
 should never be committed.
 
 Premature optimization should be avoided and code should be written in a way
 that is easy to extend, maintain, and understand by others.
 
 Still, we should watch out for obvious bottlenecks (like N+1 database queries
-or unindexed loops in critical paths).
+or un-indexed loops in critical paths).
 
 
-## Testing coverage
-
-Internally used front end code, or scripts that are not exposed to user directly
-do not necessarily need to be tested.
-
-Backend code should be tested with a very high degree of coverage reaching 100%
-if possible.
-
-Missing lines from testing must be identified and fixed if possible. Code that
-is difficult to test is a sign of a bad design that should be refactored.
 
 ## Functions should do one thing and do it well
 
