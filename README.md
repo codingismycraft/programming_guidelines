@@ -59,7 +59,16 @@ being easier to reason about.
 
 ## Implementation Changes / Unit tests
 
-The implementation changes must be reflected in the unit tests and vice versa.
+The importance of testing cannot be overstated. It is the single most important
+thing in software development and it is also the most easily forgotten and
+ommitted when programmers are trying to move fast.
+
+Testing code must be viewed as a production level and should be treated as such.
+
+Code that is difficult to test is a sign of a bad design that should be
+refactored to become easier to test.
+
+The implementation details must be reflected in the unit tests and vice versa.
 Enriching the tests to cover new functionality must be the first thing to be
 done.
 
@@ -68,7 +77,7 @@ returned values they should be tested separately. For example, if the function
 is creating a file containing calculated values, the test should be written to
 a well known dummy location and be tested separately.
 
-Each module must have its testing counter part following this pattern:
+Each module must have its corresponding test script following this pattern:
 
 ```
 ./mymodule.py
