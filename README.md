@@ -133,9 +133,10 @@ separately in isolation to others and compose them together in a simple way.
 
 ## Avoid smart / complex code
 
-Code must be as simple as possible. Avoid code that is looks concise like the
-use of the functional programming style, one liners etc. Prefer verbose code
-over concise code that will be difficult to read in the future.
+Code must be as simple as possible. Avoid code that is "dense" and "smart",
+uses functional programming style, using one liners etc. Prefer verbose code
+that reads clearly and makes it very easy to follow and understand the overall
+flow of the code.
 
 ## Git policies
 
