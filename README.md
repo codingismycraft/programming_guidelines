@@ -7,6 +7,23 @@ simple" to write, read, understand, and execute.
 
 Minimalism beats feature plurality and complexity any day of the year.
 
+The three factors to consider when writing code are:
+
+- Necessary time to complete the task
+- Quality of the code
+- Cost
+
+None of the above is a deterministing value:
+
+Programmers and managers are notorious for understimating the complexity of
+writing code and missing deadlines.
+
+Quality of code is almost impossible to measure up front.
+
+Cost of writing code depends of the number of people working on it and the
+time it takes to write it, the easines of testing it and deployment
+coplexities.
+
 We should prioritize:
 
 - Readability over cleverness
@@ -20,6 +37,15 @@ We should avoid:
 - Over-engineering
 - Complicated code
 
+## Avoid the move fast and break things principle
+
+ A common approach in software development is to try to  move fast and break
+ things hopping to fix them later. This approach should be avoided as it
+ quickly accumulates technical debt that is hard to fix and also in many cases
+ it makes vendor lockin a very difficult to remove task for the future.
+
+ Programmers must always be conservative when it comes to agreeing in tight
+ deadlines since in the vast majority of cases they will not be met.
 
 ## Function signature
 
@@ -114,7 +140,3 @@ Before commit make sure that testing is passing and has high coverage.
 
 Push changes to the remote repository and from there merge to the main branch
 as soon as possible.
-
-
-
-
