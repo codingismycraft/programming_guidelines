@@ -57,7 +57,7 @@ exposed from the module or private to it?
 Local changes have the advantage of being more isolated from other changes thus
 being easier to reason about.
 
-## Implementation Changes / Unit tests
+## Unit tests
 
 The importance of testing cannot be overstated. It is the single most important
 thing in software development and it is also the most easily forgotten and
